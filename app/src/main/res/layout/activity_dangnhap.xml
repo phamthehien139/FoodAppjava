@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".DangNhapActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#E91E63"
+        android:text="@string/dangnhap"
+        android:textSize="@dimen/size30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edTenDangNhapDN"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:hint="@string/tendangnhap"
+        android:padding="@dimen/size10dp"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGray"
+        tools:ignore="Autofill,TextFields" />
+
+    <EditText
+        android:id="@+id/edMatKhauDN"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:hint="@string/nhapmatkhau"
+        android:padding="@dimen/size10dp"
+        android:password="true"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGray"
+        tools:ignore="Autofill,Deprecated,TextFields" />
+
+    <Button
+        android:id="@+id/btnDongYDN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/size10dp"
+        android:text="@string/dongy"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+</LinearLayout>

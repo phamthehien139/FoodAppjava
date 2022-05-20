@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundtransparentGray"
+    tools:context=".ThemThucDonActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/size10dp"
+        android:text="@string/themthucdon"
+        android:textSize="@dimen/size18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edThemTenMonAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:background="@color/colorWhite"
+                android:hint="@string/tenmonan"
+                android:padding="@dimen/size10dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                tools:ignore="Autofill,TextFields" />
+
+            <EditText
+                android:id="@+id/edThemGiaTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:background="@color/colorWhite"
+                android:hint="Giá tiền"
+                android:numeric="integer"
+                android:padding="@dimen/size10dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                tools:ignore="Autofill,Deprecated,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinLoaiMonAn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size10dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/size10dp" />
+
+                <ImageButton
+                    android:id="@+id/imThemLoaiThucDon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_input_add"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imHinhThucDon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size250dp"
+            android:layout_weight="1"
+            android:src="@drawable/backgroundheader1"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDongYThemMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/size10dp"
+            android:text="@string/dongy"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnThoatThemMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:padding="@dimen/size10dp"
+            android:text="@string/thoat"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</LinearLayout>
